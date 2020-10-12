@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,100;1,200;1,400;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.header{
+    height: 95vh;
+    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('../images/header-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+html{
+    font-size: 62.5%;
+}
+.navbar{
+    padding: 1rem;
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.logo{
+    color: white;
+    float: left;
+   
+}
+.listitems{
+    list-style-type: none;
+    color: white;
+    float: right;
+    margin-top: 1rem;
+   
+    
+   
+}
+.listitem{
+    display: inline-block;
+   padding: 1rem;
+    text-transform: uppercase;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 1em;
+}
+a:hover{
+   background-color: cadetblue;
+}
+a:active{
+    color: aqua;
+}
+
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1{
+    margin-bottom: 0.15em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+    font-size: 3.5rem;
+}
+.header-cont{
+    text-align: center;
+    margin-top: 20em;
+   
+    
+}
+
+/*################################################################UTILITY CLASSES############################################*/
+
+.container{
+    max-width: 770px;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333;
+
+}
+
+.text-grey{
+    color: #555;
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 700;
+    padding:1.5em;
+    margin: 0.5em 0;
+    
+}
+
+.primary-btn{
+    background-color: #fff;
+    border-radius: 10em;
+}
+
+.pre-btn{
+    border: 2px solid red;
+    border-radius: 25px;
+    padding: 5px 10px 5px 10px;
+    
+}
+
+
+/*##############################################################################################################################*/
+
+.showcase{
+    background: #ddd;
+    padding: 5rem 0;
+}
+.row{
+    height: 250px;
+    background-color: white;
+    box-shadow: 0px 0px 20px lightblue;
+}
+.row1{
+    margin-bottom: 5rem;
+}
+
+.row1 .img-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+    
+}
+
+.row2 .img-box, .row1 .text-box{
+    float: right;
+    width: 50%;
+}
+
+.row .img-box{
+    
+   
+    height: 100%;
+}
+
+.row .text-box{
+    padding: 1rem;
+}
+
+.img1{
+    height: 100%;
+    width: 100%;
+    image-resolution: from-image;
+    image-orientation: center;
+    object-fit: cover;
+}
+
+.img2{
+    
+        height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+h2{
+    letter-spacing: 0.15em;
+    font-weight: 500;
+    font-size: 3.5rem;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.main-div{
+    height: 170px;
+     box-shadow: 5px 0px 10px black;
+}
+
+.div1{
+    width: 33.33%;
+    height: 100%;
+background: #799F0C;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ACBB78, #799F0C);  
+background: linear-gradient(to right, #ACBB78, #799F0C); 
+    color: white;
+    text-align: center;
+      padding: 1rem;
+
+    float: left;
+}
+
+.div2{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    background: #00467F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A5CC82, #00467F); 
+background: linear-gradient(to right, #A5CC82, #00467F); 
+    color: white;
+ text-align: center;
+    padding: 1rem;
+}
+
+.div3{
+    width: 33.33%;
+    height: 100%;
+  background: #00416A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFE000, #799F0C, #00416A);  
+background: linear-gradient(to right, #FFE000, #799F0C, #00416A); 
+    float: left;
+    color: white;
+     text-align: center;
+      padding: 1rem;
+}
+.main-div::after{
+content: "";
+    display: block;
+    clear: both;
+}
+
+.feature{
+    padding: 10rem 0px 5rem 0px;
+    box-shadow: 0px 0px 20px red;
+}
+h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.para{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+i{
+    padding-bottom: 4px;
+}
+
+.footer{
+    background: #555;
+    height: 20vh;
+    width: 100%;
+    box-shadow: 0px 0px 15px blue;
+    
+}
+
+.unlist{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.fo{
+    display: inline-block;
+     
+     padding: 1rem;
+    
+}
+
+
+
+/*#########################################################about page##################################*/
+
+
+.aboutclass{
+    background-color: #555;
+}
+
+.about{
+    padding-top: 6rem;
+   
+}
+
+.line::after{
+    
+    content: "";
+    display: block;
+    border: 2px solid red;
+    width: 100%;
+    
+    
+    
+}
+.line{
+    padding-bottom: 2rem;
+}
+.sec{
+   
+    text-align: center;
+}
+.sec::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.sec .liststlyeleft{
+    float: left;
+    width: 50%;
+     padding: 1rem;
+}
+
+.sec .liststlyeright{
+    float: right;
+    width: 50%;
+    padding: 1rem;
+}
+.pio{
+    padding: 1rem;
+}
+
+.rem{
+    list-style-type: none;
+}
+
+.countdiv{
+  
+    padding: 2rem;
+    text-align: center;
+}
+.countdiv::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.count1{
+    float: left;
+    width: 25%;
+}
+.count2{
+    float: left;
+     width: 25%;
+}
+.count3{
+    float: left;
+     width: 25%;
+}
+.count4{
+    float: left;
+     width: 25%;
+}
+span{
+    font-size: 25px;
+    padding-bottom: 2rem;
+    font-weight: 500;
+    color: brown;
+}
+.to{padding-top: 1rem;}
+
+.rightt a{
+    color: black;
+}
+
+.lastdive{
+    background: #C6FFDD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-bottom: 5rem;
+
+}
+
+
+
+.leftt{
+    float: left;
+}
+.rightt{
+    float: right;
+}
+.lastdive::after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+.ctc-btn{
+    border: 2px solid white;
+    height: 6rem;
+    width: 18rem;
+    text-align: center;
+    padding-top: 2.25rem;
+    margin: 0.5rem;
+    font-weight: 1000;
+}
+
+.leftt p{
+    margin: 0px auto;
+    padding-left: 2rem;
+    padding-top: 3rem;
+    color: white;
+    
+}
+
+
+.wrapper{
+ 
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.number{
+    float: left;
+   
+    width: 45%;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0px 0px 5px red;
+}
+
+.formm{
+    float:right;
+   
+     width: 45%;
+    padding: 1rem;
+ background-color: white;
+     box-shadow: 0px 0px 5px red;
+}
+
+
+
+.bg-color{
+    background-color: aliceblue;
+}
+
+.number img{
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+.wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.number p{
+    padding-top: 1rem;
+}
+
+.formm h4::after{
+    content: "";
+    display: block;
+    border-bottom: 2px solid red;
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 10px;
+    
+    
+}
+
+.required{
+    color: red;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+.username{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+    height: 100%
+         
+        
+        
+        
+}
+.formm a{
+    color: red;
+    display: inline-block;
+    padding-top: 3rem;
+    padding-left: 13rem;
+    font-size: 15px;
+    font-weight: 600;
+    
+border:2px solid red;
+     border: 2px solid red;
+    border-radius: 25px;
+    padding: 5px 10px 5px 10px;
+    margin-left: 12rem;
+}
+
+
+/*#################################################Media Quires##################################################################*/
+
+
+
+
+@media (max-width:500px){
+    
+    html{
+        font-size: 8px;
+    }
+    p{
+        float: none;
+        width: 100%;
+    }
+    
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
